@@ -17,10 +17,19 @@ body{
   margin:0;
   font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
   color:var(--text);
-  background: radial-gradient(1200px 600px at 70% -10%, rgba(124,58,237,.15), transparent 60%),
-              radial-gradient(800px 500px at 20% -20%, rgba(34,211,238,.18), transparent 60%),
-              var(--bg);
+
+  /* background: smoothed gradients + anti-banding overlay */
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(1200px 600px at 70% -10%, rgba(124,58,237,.12) 0, rgba(124,58,237,.06) 35%, rgba(124,58,237,0) 60%),
+    radial-gradient(800px 500px at 20% -20%, rgba(34,211,238,.14) 0, rgba(34,211,238,.06) 35%, rgba(34,211,238,0) 60%),
+    linear-gradient(180deg, rgba(255,255,255,.0001), rgba(0,0,0,.0001));
+  background-repeat: no-repeat, no-repeat, no-repeat;
   line-height:1.6;
+}
+/* keep fixed on desktop for stability; allow scroll on mobile for perf */
+@media (min-width: 961px){
+  body{ background-attachment: fixed, fixed, scroll; }
 }
 
 .container{width:min(1100px, 92%); margin-inline:auto}
@@ -79,7 +88,13 @@ img{max-width:100%; display:block}
 
 /* Sections */
 .section{padding:4rem 0}
-.section--alt{background:linear-gradient(180deg, rgba(255,255,255,.02), transparent)}
+.section--alt{position:relative}
+.section--alt::before{
+  content:"";
+  position:absolute; inset:0; pointer-events:none;
+  /* soft top fade; avoids harsh horizontal seams */
+  background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,0) 40%);
+}
 .section h2{font-size:1.75rem; margin:0 0 1rem}
 
 /* Grid + Cards */
@@ -93,6 +108,13 @@ img{max-width:100%; display:block}
 .card ul{margin:.25rem 0 0 1rem}
 
 .note{color:var(--muted); margin-top:.75rem}
+
+/* Certificates */
+.certs{grid-template-columns:repeat(2, 1fr)}
+.cert{display:flex; align-items:center; gap:.75rem}
+.cert i{font-size:1rem}
+.cert-title{font-weight:600}
+.cert-issuer{color:var(--muted); font-size:.95rem}
 
 /* Projects */
 .projects{grid-template-columns:repeat(3, 1fr)}
@@ -115,13 +137,6 @@ img{max-width:100%; display:block}
   border-top:1px solid var(--border);
   padding:1.5rem 0; color:var(--muted); text-align:center
 }
-
-/* Certificates */
-.certs{grid-template-columns:repeat(2, 1fr)}
-.cert{display:flex; align-items:center; gap:.75rem}
-.cert i{font-size:1rem}
-.cert-title{font-weight:600}
-.cert-issuer{color:var(--muted); font-size:.95rem}
 
 /* Responsive */
 @media (max-width: 960px){
