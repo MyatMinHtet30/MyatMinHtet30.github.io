@@ -28,6 +28,7 @@
       <ul id="navMenu" class="nav-menu">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#certificates">Certificates</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a class="btn btn--sm" href="#contact">Contact</a></li>
       </ul>
@@ -58,6 +59,7 @@
   </header>
 
   <main>
+    <!-- About -->
     <section id="about" class="section">
       <div class="container">
         <h2>About Me</h2>
@@ -72,6 +74,7 @@
       </div>
     </section>
 
+    <!-- Skills -->
     <section id="skills" class="section section--alt">
       <div class="container">
         <h2>Skills</h2>
@@ -108,11 +111,54 @@
       </div>
     </section>
 
+    <!-- Certificates -->
+    <section id="certificates" class="section">
+      <div class="container">
+        <h2>Certificates</h2>
+        <ul class="grid certs" role="list">
+          <li class="card cert">
+            <i class="fa-solid fa-certificate" aria-hidden="true"></i>
+            <div>
+              <div class="cert-title">Data Analytics for Business Forecasting</div>
+              <div class="cert-issuer">Stamford International University</div>
+            </div>
+          </li>
+          <li class="card cert">
+            <i class="fa-solid fa-certificate" aria-hidden="true"></i>
+            <div>
+              <div class="cert-title">Data Analytics with Databricks and Power BI (Workshop)</div>
+              <div class="cert-issuer">Stamford International University</div>
+            </div>
+          </li>
+          <li class="card cert">
+            <i class="fa-solid fa-certificate" aria-hidden="true"></i>
+            <div>
+              <div class="cert-title">Dynamic Web Development based on Cloud</div>
+              <div class="cert-issuer">Stamford International University</div>
+            </div>
+          </li>
+          <li class="card cert">
+            <i class="fa-solid fa-certificate" aria-hidden="true"></i>
+            <div>
+              <div class="cert-title">Basic CCTV and Networking</div>
+              <div class="cert-issuer">ABC</div>
+            </div>
+          </li>
+          <li class="card cert">
+            <i class="fa-solid fa-certificate" aria-hidden="true"></i>
+            <div>
+              <div class="cert-title">Professional Diploma in Leadership (OTHM, UK)</div>
+              <div class="cert-issuer">Myanmar Management Institute</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects -->
     <section id="projects" class="section">
       <div class="container">
         <h2>Projects</h2>
-
-        <!-- Replace these placeholders as you build -->
         <div class="grid projects">
           <article class="project-card">
             <div class="project-card__body">
@@ -153,6 +199,7 @@
       </div>
     </section>
 
+    <!-- Contact -->
     <section id="contact" class="section section--alt">
       <div class="container">
         <h2>Contact</h2>
@@ -173,6 +220,7 @@
   </footer>
 
   <script>
+    // Mobile nav toggle (accessibility-friendly)
     function toggleMenu(){
       const btn = document.querySelector('.nav-toggle');
       const menu = document.getElementById('navMenu');
@@ -181,12 +229,14 @@
       menu.classList.toggle('open');
     }
 
+    // Smooth scroll helper (keeps header offset)
     function scrollToSection(sectionId){
       const el = document.getElementById(sectionId);
       if(!el) return;
       window.scrollTo({ top: el.offsetTop - 72, behavior: 'smooth' });
     }
 
+    // Footer year
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
