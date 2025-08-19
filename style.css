@@ -18,18 +18,15 @@ body{
   font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
   color:var(--text);
 
-  /* background: smoothed gradients + anti-banding overlay */
+  /* background: radial blends + subtle noise (prevents horizontal banding) */
   background-color: var(--bg);
   background-image:
-    radial-gradient(1200px 600px at 70% -10%, rgba(124,58,237,.12) 0, rgba(124,58,237,.06) 35%, rgba(124,58,237,0) 60%),
-    radial-gradient(800px 500px at 20% -20%, rgba(34,211,238,.14) 0, rgba(34,211,238,.06) 35%, rgba(34,211,238,0) 60%),
-    linear-gradient(180deg, rgba(255,255,255,.0001), rgba(0,0,0,.0001));
-  background-repeat: no-repeat, no-repeat, no-repeat;
+    radial-gradient(1100px 620px at 70% -12%, rgba(124,58,237,.10) 0, rgba(124,58,237,.05) 38%, rgba(124,58,237,0) 70%),
+    radial-gradient(900px 560px at 18% -18%, rgba(34,211,238,.12) 0, rgba(34,211,238,.05) 36%, rgba(34,211,238,0) 68%),
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%%' height='100%%' filter='url(%23n)' opacity='0.025'/></svg>");
+  background-repeat: no-repeat, no-repeat, repeat;
+  background-size: auto, auto, 180px 180px;
   line-height:1.6;
-}
-/* keep fixed on desktop for stability; allow scroll on mobile for perf */
-@media (min-width: 961px){
-  body{ background-attachment: fixed, fixed, scroll; }
 }
 
 .container{width:min(1100px, 92%); margin-inline:auto}
@@ -45,10 +42,7 @@ img{max-width:100%; display:block}
 }
 
 /* Navigation */
-.nav{
-  display:flex; align-items:center; justify-content:space-between;
-  min-height:72px;
-}
+.nav{display:flex; align-items:center; justify-content:space-between; min-height:72px}
 .brand{
   font-weight:800; letter-spacing:.5px; font-size:1.1rem;
   background:linear-gradient(90deg,var(--brand),var(--brand-2));
@@ -88,13 +82,7 @@ img{max-width:100%; display:block}
 
 /* Sections */
 .section{padding:4rem 0}
-.section--alt{position:relative}
-.section--alt::before{
-  content:"";
-  position:absolute; inset:0; pointer-events:none;
-  /* soft top fade; avoids harsh horizontal seams */
-  background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,0) 40%);
-}
+.section--alt{background:transparent} /* remove overlay that caused seams */
 .section h2{font-size:1.75rem; margin:0 0 1rem}
 
 /* Grid + Cards */
@@ -148,8 +136,10 @@ img{max-width:100%; display:block}
 }
 @media (max-width: 680px){
   .nav-toggle{display:block}
-  .nav-menu{position:absolute; right:4%; top:64px; background:var(--card); border:1px solid var(--border);
-    border-radius:.75rem; padding:.5rem; flex-direction:column; display:none}
+  .nav-menu{
+    position:absolute; right:4%; top:64px; background:var(--card); border:1px solid var(--border);
+    border-radius:.75rem; padding:.5rem; flex-direction:column; display:none
+  }
   .nav-menu.open{display:flex}
   .projects{grid-template-columns:1fr}
 }
