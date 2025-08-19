@@ -35,6 +35,7 @@ img{max-width:100%; display:block}
   border-bottom:1px solid rgba(255,255,255,.04);
 }
 
+/* Navigation */
 .nav{
   display:flex; align-items:center; justify-content:space-between;
   min-height:72px;
@@ -52,6 +53,7 @@ img{max-width:100%; display:block}
 .btn--ghost{background:transparent; color:var(--text); border:1px solid var(--border)}
 .btn--sm{padding:.45rem .75rem; font-size:.9rem}
 
+/* Hero */
 .hero{
   display:grid; grid-template-columns:1.2fr .8fr; gap:2.5rem; align-items:center;
   padding:2.5rem 0 1.25rem;
@@ -67,6 +69,7 @@ img{max-width:100%; display:block}
   border:1px solid var(--border); box-shadow:var(--shadow); margin-inline:auto;
 }
 
+/* Social links */
 .social{display:flex; gap:.75rem; padding:0; margin:1.25rem 0 0; list-style:none}
 .social a{
   width:40px; height:40px; display:grid; place-items:center; border:1px solid var(--border);
@@ -74,10 +77,12 @@ img{max-width:100%; display:block}
 }
 .social a:hover{transform:translateY(-2px); transition:.2s; color:var(--accent); border-color:rgba(255,255,255,.2)}
 
+/* Sections */
 .section{padding:4rem 0}
 .section--alt{background:linear-gradient(180deg, rgba(255,255,255,.02), transparent)}
 .section h2{font-size:1.75rem; margin:0 0 1rem}
 
+/* Grid + Cards */
 .grid{display:grid; gap:1rem}
 .skills{grid-template-columns:repeat(4, 1fr)}
 .card{
@@ -89,6 +94,7 @@ img{max-width:100%; display:block}
 
 .note{color:var(--muted); margin-top:.75rem}
 
+/* Projects */
 .projects{grid-template-columns:repeat(3, 1fr)}
 .project-card{
   display:flex; flex-direction:column; justify-content:space-between;
@@ -99,14 +105,23 @@ img{max-width:100%; display:block}
 .link{font-weight:600; color:var(--accent)}
 .link.is-disabled,[aria-disabled="true"]{opacity:.5; pointer-events:none}
 
+/* Contact */
 .contact-list{list-style:none; padding:0; margin:.5rem 0 0}
 .contact-list li{display:flex; gap:.6rem; align-items:center; margin:.35rem 0}
 .contact-list i{width:18px}
 
+/* Footer */
 .site-footer{
   border-top:1px solid var(--border);
   padding:1.5rem 0; color:var(--muted); text-align:center
 }
+
+/* Certificates */
+.certs{grid-template-columns:repeat(2, 1fr)}
+.cert{display:flex; align-items:center; gap:.75rem}
+.cert i{font-size:1rem}
+.cert-title{font-weight:600}
+.cert-issuer{color:var(--muted); font-size:.95rem}
 
 /* Responsive */
 @media (max-width: 960px){
@@ -114,6 +129,7 @@ img{max-width:100%; display:block}
   .hero__right{order:-1}
   .skills{grid-template-columns:repeat(2, 1fr)}
   .projects{grid-template-columns:1fr 1fr}
+  .certs{grid-template-columns:1fr}
 }
 @media (max-width: 680px){
   .nav-toggle{display:block}
