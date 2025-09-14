@@ -21,13 +21,14 @@
 <body>
   <header class="site-header" role="banner">
     <nav class="nav container">
-      <a class="brand" href="#top" aria-label="Go to top">MMH | Myat Min Htet</a>
+      <a class="brand" href="#top" aria-label="Go to top">Leon | Myat Min Htet</a>
       <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" onclick="toggleMenu()">
         <i class="fa-solid fa-bars"></i>
       </button>
       <ul id="navMenu" class="nav-menu">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#certificates">Certificates</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a class="btn btn--sm" href="#contact">Contact</a></li>
@@ -36,10 +37,8 @@
 
     <section class="hero container" id="top">
       <div class="hero__left">
-        <!-- UPDATED eyebrow -->
         <p class="eyebrow">Final year IT Student • Software Engineer • AI Enthusiast</p>
         <h1>Hi, I’m <span class="accent">Myat Min Htet</span>.</h1>
-        <!-- UPDATED lead -->
         <p class="lead">
           I build practical, full-stack solutions across web development, data, and IoT. 
           I’m focused on AI/ML fundamentals and writing clean, testable, maintainable code, 
@@ -53,7 +52,6 @@
           <li><a href="https://www.linkedin.com/in/myat-min-htet-22a849291/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
           <li><a href="https://github.com/MyatMinHtet30" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
           <li><a href="https://www.instagram.com/myatminhtet301?igsh=MWNjOW5uYTY2emdkOA==" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
-          <!-- ADDED Line (top socials) -->
           <li><a href="https://line.me/ti/p/hJv90A3bak" target="_blank" aria-label="Line"><i class="fa-brands fa-line"></i></a></li>
         </ul>
       </div>
@@ -70,12 +68,17 @@
         <h2>About Me</h2>
         <p>
           I’m a final-year IT student at Stamford International University with hands-on practice in 
-          <strong>Python, Java, JavaScript, HTML/CSS</strong>, and <strong>MySQL</strong>. I have also gained working 
-          experience with <strong>PHP Laravel</strong> for building full-stack web applications, handling both 
-          backend logic and frontend integration. I enjoy designing efficient databases and exploring 
-          <strong>AI/ML</strong> to turn data into practical solutions. I also tinker with <strong>Arduino (IoT)</strong>, 
-          basic networking via <strong>Cisco Packet Tracer</strong>, and Linux. My goal is to grow into a software 
-          engineer who writes maintainable code, communicates clearly, and ships reliable, user-focused features.
+          <strong>Python, Java, JavaScript, HTML/CSS, and MySQL</strong>. I have practical experience with 
+          <strong>PHP Laravel</strong> for developing full-stack web applications, managing both backend logic 
+          and frontend integration. Alongside software development, I’m passionate about 
+          <strong>AI/ML and data science</strong>, applying Python to analyze data and build intelligent solutions.
+        </p>
+        
+        <p>
+          I also explore <strong>Arduino (IoT)</strong> projects, basic networking with 
+          <strong>Cisco Packet Tracer</strong>, and Linux systems. My goal is to grow into a 
+          <strong>software engineer and AI practitioner</strong> who writes maintainable code, leverages data effectively, 
+          and delivers reliable, user-focused features.
         </p>
       </div>
     </section>
@@ -114,6 +117,39 @@
           </div>
         </div>
         <p class="note">Currently learning: data structures & algorithms, Python for data, and ML basics.</p>
+      </div>
+    </section>
+
+    <!-- Work Experience -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2>Work Experience</h2>
+        <ul class="timeline">
+          <li>
+            <h3>Softnovations <span class="date">2025 – Present</span></h3>
+            <p><strong>Junior Web Developer</strong></p>
+            <p>
+              Build and maintain web apps with Laravel, MySQL, and JavaScript, 
+              supporting APIs and performance improvements.
+            </p>
+          </li>
+          <li>
+            <h3>Super Seven Stars Motors Industry Co., Ltd <span class="date">2020 – 2021</span></h3>
+            <p><strong>Junior CAD Designer</strong></p>
+            <p>
+              Assisted in 2D/3D automotive design using AutoCAD and supported design 
+              reviews with drafts and adjustments.
+            </p>
+          </li>
+          <li>
+            <h3>New Image Computer Store and Wedding Hall, Yangon <span class="date">2017 – 2020</span></h3>
+            <p><strong>Administrative Assistant</strong></p>
+            <p>
+              Prepared customer documents, supported daily office tasks, assisted in 
+              wedding event coordination, and contributed to photo editing services.
+            </p>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -168,7 +204,6 @@
 
         <!-- CONFIDENTIAL / PROFESSIONAL -->
         <h3 style="margin:0.5rem 0 0.5rem; color:#aab0bf; font-weight:600;">Confidential Projects</h3>
-        <!-- simplified list version -->
         <ul style="margin:0 0 1.25rem 1.1rem; padding:0; line-height:1.6;">
           <li>
             <strong>Enterprise Logistics Platform</strong> — Working on a cargo trading/logistics web app as a full-stack developer, handling Laravel CRUD APIs, MySQL database design, frontend integration, and end-to-end testing. <em>Details available upon request under NDA.</em>
@@ -196,7 +231,6 @@
             </div>
           </article>
 
-          <!-- AI Text Summarizer (already added previously) -->
           <article class="project-card">
             <div class="project-card__body">
               <h3>AI Text Summarizer</h3>
@@ -212,7 +246,6 @@
             </div>
           </article>
 
-          <!-- NEW: Arduino Vision Assist -->
           <article class="project-card">
             <div class="project-card__body">
               <h3>Arduino Vision Assist</h3>
@@ -253,7 +286,7 @@
             </div>
             <div class="project-card__meta">
               <span class="tag">Python / Streamlit / API</span>
-              <a class="link is-disabled" href="#">Live</a> <!-- You can later deploy on Streamlit Cloud -->
+              <a class="link is-disabled" href="#">Live</a>
               <a class="link" href="https://github.com/MyatMinHtet30/ai-text-to-speech-generate" target="_blank">Code</a>
             </div>
           </article>
@@ -271,9 +304,7 @@
           <li><i class="fa-solid fa-envelope"></i> <a href="mailto:myatmin3011@gmail.com">myatmin3011@gmail.com</a></li>
           <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/myat-min-htet-22a849291/" target="_blank">LinkedIn</a></li>
           <li><i class="fa-brands fa-github"></i> <a href="https://github.com/MyatMinHtet30" target="_blank">GitHub</a></li>
-          <!-- ADDED Instagram (bottom) -->
           <li><i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/myatminhtet301?igsh=MWNjOW5uYTY2emdkOA==" target="_blank">Instagram</a></li>
-          <!-- ADDED Line (bottom) -->
           <li><i class="fa-brands fa-line"></i> <a href="https://line.me/ti/p/hJv90A3bak" target="_blank">Line</a></li>
         </ul>
       </div>
@@ -287,7 +318,6 @@
   </footer>
 
   <script>
-    // Mobile nav toggle (accessibility-friendly)
     function toggleMenu(){
       const btn = document.querySelector('.nav-toggle');
       const menu = document.getElementById('navMenu');
@@ -296,17 +326,13 @@
       menu.classList.toggle('open');
     }
 
-    // Smooth scroll helper (keeps header offset)
     function scrollToSection(sectionId){
       const el = document.getElementById(sectionId);
       if(!el) return;
       window.scrollTo({ top: el.offsetTop - 72, behavior: 'smooth' });
     }
 
-    // Footer year
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
-
-
