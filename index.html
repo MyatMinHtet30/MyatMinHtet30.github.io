@@ -79,48 +79,63 @@
 
     <!-- Skills -->
     <section id="skills" class="section section--alt">
-      <div class="container">
-        <h2>Skills</h2>
-        <div class="grid skills">
-          <div class="card">
-            <h3>Programming</h3>
-            <ul>
-              <li>Python • Java • JavaScript</li>
-              <li>HTML • CSS</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Frameworks & Libraries</h3>
-            <ul>
-              <li>Laravel • Streamlit</li>
-              <li>Basic Java Swing</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Databases & Data</h3>
-            <ul>
-              <li>MySQL (schema design, queries)</li>
-              <li>Python for data & ML basics</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Tools</h3>
-            <ul>
-              <li>Git & GitHub • Linux/CLI</li>
-              <li>VS Code • Postman</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Other</h3>
-            <ul>
-              <li>Arduino (IoT) • Cisco Packet Tracer (basics)</li>
-              <li>Microsoft Office • Photoshop • AutoCAD</li>
-            </ul>
-          </div>
-        </div>
-        <p class="note">Currently learning: data structures & algorithms, Python for data, and ML fundamentals.</p>
+  <div class="container">
+    <h2>Skills</h2>
+    <div class="grid skills">
+      <div class="card">
+        <h3>Programming</h3>
+        <ul class="pill-list">
+          <li class="pill">Python</li>
+          <li class="pill">Java</li>
+          <li class="pill">JavaScript</li>
+          <li class="pill">HTML</li>
+          <li class="pill">CSS</li>
+        </ul>
       </div>
-    </section>
+
+      <div class="card">
+        <h3>Frameworks & Libraries</h3>
+        <ul class="pill-list">
+          <li class="pill">Laravel</li>
+          <li class="pill">Streamlit</li>
+          <li class="pill">Java Swing (basic)</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Databases & Data</h3>
+        <ul class="pill-list">
+          <li class="pill">MySQL (schema, queries)</li>
+          <li class="pill">Python for Data</li>
+          <li class="pill">ML Fundamentals</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Tools</h3>
+        <ul class="pill-list">
+          <li class="pill">Git & GitHub</li>
+          <li class="pill">Linux / CLI</li>
+          <li class="pill">VS Code</li>
+          <li class="pill">Postman</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Other</h3>
+        <ul class="pill-list">
+          <li class="pill">Arduino (IoT)</li>
+          <li class="pill">Cisco Packet Tracer (basic)</li>
+          <li class="pill">Microsoft Office</li>
+          <li class="pill">Photoshop</li>
+          <li class="pill">AutoCAD</li>
+        </ul>
+      </div>
+    </div>
+    <p class="note">Currently learning: data structures & algorithms, Python for data, and ML fundamentals.</p>
+  </div>
+</section>
+
 
     <!-- Education -->
     <section id="education" class="section">
@@ -145,32 +160,58 @@
 
     <!-- Work Experience -->
     <section id="experience" class="section section--alt">
-      <div class="container">
-        <h2>Work Experience</h2>
-        <ul class="timeline">
-          <li>
-            <h3>Softnovations <span class="date">(2025 – Present)</span></h3>
-            <p><strong>Junior Web Developer</strong></p>
-            <p>Build and maintain Laravel + MySQL web apps, integrate APIs, and improve performance.</p>
-            <ul>
-              <li><strong>Steelplus – Cargo Trading Web Application (2025)</strong>: Full-stack collaboration on Laravel backend, DB architecture, frontend implementation, and QA testing.</li>
-              <li><strong>168Home – Excel Generator with Speech-to-Text (2025)</strong>: Co-developing a voice-input tool to speed up data entry for elderly users; UI/UX and backend integration.</li>
-              <li><strong>Sipman (Wine Selling & Admin Site) (2025)</strong>: Maintaining and repairing an existing platform; improved stability and features to meet company needs.</li>
-            </ul>
-          </li>
-          <li>
-            <h3>Super Seven Stars Motors Industry Co., Ltd <span class="date">(2020 – 2021)</span></h3>
-            <p><strong>Junior CAD Designer</strong></p>
-            <p>Assisted in 2D/3D automotive design using AutoCAD and supported design reviews.</p>
-          </li>
-          <li>
-            <h3>New Image Computer Store and Wedding Hall, Yangon <span class="date">(2017 – 2020)</span></h3>
-            <p><strong>Administrative Assistant</strong></p>
-            <p>Prepared documents, supported daily office tasks, and assisted with wedding event coordination and photo editing.</p>
-          </li>
+  <div class="container">
+    <h2>Work Experience</h2>
+
+    <div class="exp-list">
+      <!-- Softnovations -->
+      <article class="exp-item">
+        <div class="exp-head">
+          <div class="exp-company">Softnovations</div>
+          <div class="exp-meta">2025 – Present</div>
+        </div>
+        <div class="exp-role">Junior Web Developer</div>
+        <p>Build and maintain Laravel + MySQL web applications, integrate REST APIs, and improve performance through profiling and query optimization.</p>
+        <ul class="exp-bullets">
+          <li><strong>Steelplus — Cargo Trading Web Application (2025):</strong> Delivered full-stack features across Laravel services, database schema design, and frontend integration; contributed test coverage and QA.</li>
+          <li><strong>168Home — Excel Generator with Speech-to-Text (2025):</strong> Co-developed voice-input flows to speed up elderly users’ data entry; implemented accessible UI and backend endpoints.</li>
+          <li><strong>Sipman — Wine Selling & Admin Site (2025):</strong> Stabilized legacy codebase, fixed critical bugs, and added admin features to meet internal operations needs.</li>
         </ul>
-      </div>
-    </section>
+        <div class="stack">
+          <span class="pill">Laravel</span><span class="pill">PHP</span><span class="pill">MySQL</span>
+          <span class="pill">REST API</span><span class="pill">JavaScript</span><span class="pill">Git/GitHub</span>
+        </div>
+      </article>
+
+      <!-- Super Seven Stars -->
+      <article class="exp-item">
+        <div class="exp-head">
+          <div class="exp-company">Super Seven Stars Motors Industry Co., Ltd</div>
+          <div class="exp-meta">2020 – 2021</div>
+        </div>
+        <div class="exp-role">Junior CAD Designer</div>
+        <p>Assisted in 2D/3D automotive design using AutoCAD and supported design reviews with drafts and revisions.</p>
+        <div class="stack">
+          <span class="pill">AutoCAD</span><span class="pill">Drafting</span>
+        </div>
+      </article>
+
+      <!-- New Image -->
+      <article class="exp-item">
+        <div class="exp-head">
+          <div class="exp-company">New Image Computer Store & Wedding Hall, Yangon</div>
+          <div class="exp-meta">2017 – 2020</div>
+        </div>
+        <div class="exp-role">Administrative Assistant</div>
+        <p>Prepared customer documents, supported daily office operations, and assisted with wedding event coordination and photo editing.</p>
+        <div class="stack">
+          <span class="pill">Office Suite</span><span class="pill">Coordination</span><span class="pill">Photoshop</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
 
     <!-- Certificates -->
     <section id="certificates" class="section">
@@ -324,3 +365,4 @@
   </script>
 </body>
 </html>
+
