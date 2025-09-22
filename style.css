@@ -100,7 +100,14 @@ img{max-width:100%; display:block}
   box-shadow:0 6px 18px rgba(2,12,27,.18)
 }
 .card h3{margin:.25rem 0 .5rem}
-.card ul{margin:.25rem 0 0 1rem}
+/* Default lists inside cards (like Education timeline) */
+.card ul{margin:.25rem 0 0 1rem; padding:0; list-style:disc}
+
+/* Override for pill list specifically */
+.pill-list{display:flex;flex-wrap:wrap;gap:.45rem .55rem;list-style:none;margin:.35rem 0 0;padding:0}
+.pill{font-size:.95rem;line-height:1;background:rgba(255,255,255,.04);
+      border:1px solid var(--border);padding:.4rem .6rem;border-radius:.6rem;color:#e8ebf5}
+
 
 .note{color:var(--muted); margin-top:.75rem}
 
@@ -163,6 +170,7 @@ img{max-width:100%; display:block}
   .nav-menu.open{display:flex}
   .projects{grid-template-columns:1fr}
 }
+
 
 
 
