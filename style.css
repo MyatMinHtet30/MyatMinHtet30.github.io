@@ -153,6 +153,18 @@ img{max-width:100%; display:block}
   padding:1.5rem 0; color:var(--muted); text-align:center
 }
 
+/* Confidential note (Work Experience) */
+.confidential-note{
+  display:flex; align-items:center; gap:.5rem;
+  background:rgba(255,255,255,.03);
+  border:1px dashed var(--border);
+  color:var(--muted);
+  padding:.6rem .75rem; border-radius:.6rem;
+  margin:.6rem 0 .4rem;
+  font-size:.95rem;
+}
+.confidential-note i{color:var(--accent)}
+
 /* Responsive */
 @media (max-width: 960px){
   .hero{grid-template-columns:1fr; text-align:left}
@@ -170,6 +182,7 @@ img{max-width:100%; display:block}
   .nav-menu.open{display:flex}
   .projects{grid-template-columns:1fr}
 }
+
 
 
 
