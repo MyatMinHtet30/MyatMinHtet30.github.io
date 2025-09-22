@@ -111,6 +111,19 @@ img{max-width:100%; display:block}
 .cert-title{font-weight:600}
 .cert-issuer{color:var(--muted); font-size:.95rem}
 
+/* ===== EXPERIENCE CARDS / TIMELINE ===== */
+.exp-list{display:grid;gap:1rem}
+.exp-item{background:var(--card);border:1px solid var(--border);border-radius:1rem;padding:1rem;box-shadow:0 6px 18px rgba(2,12,27,.18);position:relative}
+.exp-head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem .75rem;margin-bottom:.35rem}
+.exp-company{font-weight:700}
+.exp-meta{color:var(--muted)}
+.exp-role{font-weight:600;margin:.2rem 0 .6rem}
+.exp-bullets{margin:.4rem 0 .25rem 1.1rem}
+.exp-bullets li{margin:.2rem 0}
+.stack{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.5rem}
+.stack .pill{font-size:.85rem;padding:.3rem .5rem}
+
+
 /* Projects */
 .projects{grid-template-columns:repeat(3, 1fr)}
 .project-card{
@@ -150,5 +163,6 @@ img{max-width:100%; display:block}
   .nav-menu.open{display:flex}
   .projects{grid-template-columns:1fr}
 }
+
 
 
