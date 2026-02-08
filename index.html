@@ -22,7 +22,7 @@
 <header class="site-header" role="banner">
   <nav class="nav container">
     <a class="brand" href="#top">Leon | Myat Min Htet</a>
-    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" onclick="toggleMenu()">
+    <button class="nav-toggle" aria-expanded="false" onclick="toggleMenu()">
       <i class="fa-solid fa-bars"></i>
     </button>
     <ul id="navMenu" class="nav-menu">
@@ -64,56 +64,90 @@
 
 <main>
 
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>
+      Final-year IT student at Stamford International University with real
+      experience in <strong>Laravel, MySQL, JavaScript, and Python</strong>.
+      Interested in practical <strong>AI/ML</strong>, clean system design,
+      and user-focused development.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section section--alt">
+  <div class="container">
+    <h2>Skills</h2>
+    <div class="grid skills">
+      <div class="card"><h3>Programming</h3><ul class="pill-list">
+        <li class="pill">Python</li><li class="pill">Java</li><li class="pill">JavaScript</li><li class="pill">HTML</li><li class="pill">CSS</li>
+      </ul></div>
+      <div class="card"><h3>Frameworks</h3><ul class="pill-list">
+        <li class="pill">Laravel</li><li class="pill">Streamlit</li><li class="pill">Java Swing</li>
+      </ul></div>
+      <div class="card"><h3>Databases</h3><ul class="pill-list">
+        <li class="pill">MySQL</li><li class="pill">Python for Data</li><li class="pill">ML Fundamentals</li>
+      </ul></div>
+      <div class="card"><h3>Tools</h3><ul class="pill-list">
+        <li class="pill">Git</li><li class="pill">Linux</li><li class="pill">VS Code</li><li class="pill">Postman</li>
+      </ul></div>
+      <div class="card"><h3>Other</h3><ul class="pill-list">
+        <li class="pill">Arduino</li><li class="pill">Cisco Packet Tracer</li><li class="pill">Photoshop</li><li class="pill">AutoCAD</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section">
+  <div class="container">
+    <h2>Education</h2>
+    <ul class="timeline">
+      <li>
+        <h3>BSc in Information Technology <span class="date">(2022 – Present)</span></h3>
+        <p>Stamford International University — <strong>CGPA 3.88 / 4.0</strong></p>
+      </li>
+      <li>
+        <h3>BBA <span class="date">(2024 – Present)</span></h3>
+        <p>University of the People — <strong>CGPA 3.17 / 4.0</strong></p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section section--alt">
+  <div class="container">
+    <h2>Work Experience</h2>
+
+    <article class="exp-item">
+      <div class="exp-head">
+        <div class="exp-company">Softnovations</div>
+        <div class="exp-meta">2025 – Present</div>
+      </div>
+      <div class="exp-role">Junior Web Developer</div>
+      <p>Laravel & MySQL web development, REST API integration, optimization.</p>
+      <ul class="exp-bullets">
+        <li><strong>Steelplus</strong> — Cargo Trading Platform</li>
+        <li><strong>168Home</strong> — Speech-to-Text Excel Generator</li>
+        <li><strong>Sipman</strong> — Wine Selling Admin Platform</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
 <!-- CERTIFICATES -->
 <section id="certificates" class="section">
   <div class="container">
     <h2>Certificates</h2>
     <ul class="grid certs">
-      <li class="card cert">
-        <i class="fa-solid fa-certificate"></i>
-        <div>
-          <div class="cert-title">Data Analytics for Business Forecasting</div>
-          <div class="cert-issuer">Stamford International University</div>
-        </div>
-      </li>
-
-      <li class="card cert">
-        <i class="fa-solid fa-certificate"></i>
-        <div>
-          <div class="cert-title">Data Analytics with Databricks and Power BI</div>
-          <div class="cert-issuer">Stamford International University</div>
-        </div>
-      </li>
-
-      <li class="card cert">
-        <i class="fa-solid fa-certificate"></i>
-        <div>
-          <div class="cert-title">Dynamic Web Development based on Cloud</div>
-          <div class="cert-issuer">Stamford International University</div>
-        </div>
-      </li>
-
-      <li class="card cert">
-        <i class="fa-solid fa-certificate"></i>
-        <div>
-          <div class="cert-title">Basic CCTV and Networking</div>
-          <div class="cert-issuer">ABC</div>
-        </div>
-      </li>
-
-      <li class="card cert">
-        <i class="fa-solid fa-certificate"></i>
-        <div>
-          <div class="cert-title">Professional Diploma in Leadership (OTHM, UK)</div>
-          <div class="cert-issuer">Myanmar Management Institute</div>
-        </div>
-      </li>
-
-      <li class="card cert">
-        <i class="fa-brands fa-aws"></i>
+      <li class="card cert"><i class="fa-brands fa-aws"></i>
         <div>
           <div class="cert-title">AWS Academy Graduate – Machine Learning Foundations</div>
-          <div class="cert-issuer">Amazon Web Services (AWS)</div>
+          <div class="cert-issuer">Amazon Web Services</div>
           <a class="link" href="https://www.credly.com/go/GQZluwQL" target="_blank">View Digital Badge</a>
         </div>
       </li>
@@ -126,73 +160,20 @@
   <div class="container">
     <h2>Projects</h2>
 
-    <!-- WORKING PROJECTS FIRST -->
-    <h3 style="margin:1.25rem 0 0.5rem; color:#aab0bf;">Professional Projects</h3>
+    <h3>Professional Projects</h3>
     <div class="grid projects">
-
-      <article class="project-card">
-        <div class="project-card__body">
-          <h3>Steelplus — Cargo Trading Web Application</h3>
-          <p>Production-level Laravel & MySQL system for cargo trading operations.</p>
-        </div>
-        <div class="project-card__meta">
-          <span class="tag">Laravel</span>
-          <span class="tag">MySQL</span>
-          <span class="tag">Production</span>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <div class="project-card__body">
-          <h3>168Home — Excel Generator with Speech-to-Text</h3>
-          <p>Accessibility-focused system enabling elderly users to generate Excel data via voice.</p>
-        </div>
-        <div class="project-card__meta">
-          <span class="tag">Laravel</span>
-          <span class="tag">Speech-to-Text</span>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <div class="project-card__body">
-          <h3>Sipman — Wine Selling & Admin Platform</h3>
-          <p>Bug fixes, feature updates, and admin system stabilization.</p>
-        </div>
-        <div class="project-card__meta">
-          <span class="tag">Laravel</span>
-          <span class="tag">Admin Panel</span>
-        </div>
-      </article>
-
+      <article class="project-card"><h3>Steelplus</h3><p>Cargo trading web system.</p></article>
+      <article class="project-card"><h3>168Home</h3><p>Speech-based Excel automation.</p></article>
+      <article class="project-card"><h3>Sipman</h3><p>Wine selling admin platform.</p></article>
     </div>
 
-    <!-- ACADEMIC PROJECTS -->
-    <h3 style="margin:2rem 0 0.5rem; color:#aab0bf;">Academic Projects</h3>
+    <h3>Academic Projects</h3>
     <div class="grid projects">
-
-      <article class="project-card">
-        <div class="project-card__body">
-          <h3>Personal Portfolio Website</h3>
-          <p>Responsive portfolio built with semantic HTML and modern CSS.</p>
-        </div>
-        <div class="project-card__meta">
-          <span class="tag">HTML / CSS</span>
-          <a class="link" href="https://myatminhtet30.github.io" target="_blank">Live</a>
-          <a class="link" href="https://github.com/MyatMinHtet30/MyatMinHtet30.github.io" target="_blank">Code</a>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <div class="project-card__body">
-          <h3>AI Text Summarizer</h3>
-          <p>AI-powered tool to summarize long text into concise output.</p>
-        </div>
-        <div class="project-card__meta">
-          <span class="tag">Python</span>
-          <a class="link" href="https://github.com/MyatMinHtet30/ai-text-summarizer" target="_blank">Code</a>
-        </div>
-      </article>
-
+      <article class="project-card"><h3>Portfolio Website</h3></article>
+      <article class="project-card"><h3>AI Text Summarizer</h3></article>
+      <article class="project-card"><h3>Arduino Vision Assist</h3></article>
+      <article class="project-card"><h3>Agoda Reservation System</h3></article>
+      <article class="project-card"><h3>AI Text-to-Speech Generator</h3></article>
     </div>
   </div>
 </section>
@@ -201,7 +182,7 @@
 
 <footer class="site-footer">
   <div class="container">
-    <p>© <span id="year"></span> Myat Min Htet. All rights reserved.</p>
+    <p>© <span id="year"></span> Myat Min Htet</p>
   </div>
 </footer>
 
