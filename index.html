@@ -19,431 +19,198 @@
 </head>
 
 <body>
-  <header class="site-header" role="banner">
-    <nav class="nav container">
-      <a class="brand" href="#top" aria-label="Go to top">Leon | Myat Min Htet</a>
-      <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" onclick="toggleMenu()">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-      <ul id="navMenu" class="nav-menu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#certificates">Certificates</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a class="btn btn--sm" href="#contact">Contact</a></li>
+<header class="site-header" role="banner">
+  <nav class="nav container">
+    <a class="brand" href="#top">Leon | Myat Min Htet</a>
+    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" onclick="toggleMenu()">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <ul id="navMenu" class="nav-menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a class="btn btn--sm" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero container" id="top">
+    <div class="hero__left">
+      <p class="eyebrow">Final-year IT Student • Software Engineer • AI Enthusiast</p>
+      <h1>Hi, I’m <span class="accent">Myat Min Htet</span>.</h1>
+      <p class="lead">
+        I build full-stack web apps and practical AI tools. I focus on clean,
+        maintainable Laravel + Python solutions, solid database design, and
+        user-friendly frontends.
+      </p>
+      <div class="cta">
+        <a class="btn" href="#projects">See Projects</a>
+        <a class="btn btn--ghost" href="#contact">Contact Me</a>
+      </div>
+      <ul class="social">
+        <li><a href="https://www.linkedin.com/in/myat-min-htet-22a849291/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/MyatMinHtet30" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+        <li><a href="https://www.instagram.com/myatminhtet301" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="https://line.me/ti/p/hJv90A3bak" target="_blank"><i class="fa-brands fa-line"></i></a></li>
       </ul>
-    </nav>
-
-    <section class="hero container" id="top">
-      <div class="hero__left">
-        <p class="eyebrow">Final-year IT Student • Software Engineer • AI Enthusiast</p>
-        <h1>Hi, I’m <span class="accent">Myat Min Htet</span>.</h1>
-        <p class="lead">
-          I build full-stack web apps and practical AI tools. I focus on clean,
-          maintainable Laravel + Python solutions, solid database design, and
-          user-friendly frontends.
-        </p>
-        <div class="cta">
-          <a class="btn" href="#projects">See Projects</a>
-          <a class="btn btn--ghost" href="#contact">Contact Me</a>
-        </div>
-        <ul class="social">
-          <li><a href="https://www.linkedin.com/in/myat-min-htet-22a849291/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
-          <li><a href="https://github.com/MyatMinHtet30" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
-          <li><a href="https://www.instagram.com/myatminhtet301?igsh=MWNjOW5uYTY2emdkOA==" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
-          <li><a href="https://line.me/ti/p/hJv90A3bak" target="_blank" aria-label="Line"><i class="fa-brands fa-line"></i></a></li>
-        </ul>
-      </div>
-      <div class="hero__right">
-        <img src="images/myatmin.jpg" alt="Portrait of Myat Min Htet" class="profile-img" />
-      </div>
-    </section>
-  </header>
-
-  <main>
-    <!-- About -->
-    <section id="about" class="section">
-      <div class="container">
-        <h2>About Me</h2>
-        <p>
-          Final-year IT student at Stamford International University with real
-          experience in <strong>Laravel, MySQL, JavaScript, and Python</strong>.
-          I enjoy shipping reliable features, writing tidy code, and exploring
-          <strong>AI/ML</strong> for practical use cases. I also tinker with
-          <strong>Arduino/IoT</strong> and basic networking.
-        </p>
-      </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="section section--alt">
-  <div class="container">
-    <h2>Skills</h2>
-    <div class="grid skills">
-      <div class="card">
-        <h3>Programming</h3>
-        <ul class="pill-list">
-          <li class="pill">Python</li>
-          <li class="pill">Java</li>
-          <li class="pill">JavaScript</li>
-          <li class="pill">HTML</li>
-          <li class="pill">CSS</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Frameworks & Libraries</h3>
-        <ul class="pill-list">
-          <li class="pill">Laravel</li>
-          <li class="pill">Streamlit</li>
-          <li class="pill">Java Swing (basic)</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Databases & Data</h3>
-        <ul class="pill-list">
-          <li class="pill">MySQL (schema, queries)</li>
-          <li class="pill">Python for Data</li>
-          <li class="pill">ML Fundamentals</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Tools</h3>
-        <ul class="pill-list">
-          <li class="pill">Git & GitHub</li>
-          <li class="pill">Linux / CLI</li>
-          <li class="pill">VS Code</li>
-          <li class="pill">Postman</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Other</h3>
-        <ul class="pill-list">
-          <li class="pill">Arduino (IoT)</li>
-          <li class="pill">Cisco Packet Tracer (basic)</li>
-          <li class="pill">Microsoft Office</li>
-          <li class="pill">Photoshop</li>
-          <li class="pill">AutoCAD</li>
-        </ul>
-      </div>
     </div>
-    <p class="note">Currently learning: data structures & algorithms, Python for data, and ML fundamentals.</p>
+    <div class="hero__right">
+      <img src="images/myatmin.jpg" alt="Portrait of Myat Min Htet" class="profile-img" />
+    </div>
+  </section>
+</header>
+
+<main>
+
+<!-- CERTIFICATES -->
+<section id="certificates" class="section">
+  <div class="container">
+    <h2>Certificates</h2>
+    <ul class="grid certs">
+      <li class="card cert">
+        <i class="fa-solid fa-certificate"></i>
+        <div>
+          <div class="cert-title">Data Analytics for Business Forecasting</div>
+          <div class="cert-issuer">Stamford International University</div>
+        </div>
+      </li>
+
+      <li class="card cert">
+        <i class="fa-solid fa-certificate"></i>
+        <div>
+          <div class="cert-title">Data Analytics with Databricks and Power BI</div>
+          <div class="cert-issuer">Stamford International University</div>
+        </div>
+      </li>
+
+      <li class="card cert">
+        <i class="fa-solid fa-certificate"></i>
+        <div>
+          <div class="cert-title">Dynamic Web Development based on Cloud</div>
+          <div class="cert-issuer">Stamford International University</div>
+        </div>
+      </li>
+
+      <li class="card cert">
+        <i class="fa-solid fa-certificate"></i>
+        <div>
+          <div class="cert-title">Basic CCTV and Networking</div>
+          <div class="cert-issuer">ABC</div>
+        </div>
+      </li>
+
+      <li class="card cert">
+        <i class="fa-solid fa-certificate"></i>
+        <div>
+          <div class="cert-title">Professional Diploma in Leadership (OTHM, UK)</div>
+          <div class="cert-issuer">Myanmar Management Institute</div>
+        </div>
+      </li>
+
+      <li class="card cert">
+        <i class="fa-brands fa-aws"></i>
+        <div>
+          <div class="cert-title">AWS Academy Graduate – Machine Learning Foundations</div>
+          <div class="cert-issuer">Amazon Web Services (AWS)</div>
+          <a class="link" href="https://www.credly.com/go/GQZluwQL" target="_blank">View Digital Badge</a>
+        </div>
+      </li>
+    </ul>
   </div>
 </section>
 
-
-    <!-- Education -->
-    <section id="education" class="section">
-      <div class="container">
-        <h2>Education</h2>
-        <ul class="timeline">
-          <li>
-            <h3>Bachelor of Science in Information Technology
-              <span class="date">(2022 – Present)</span>
-            </h3>
-            <p>Stamford International University — <strong>CGPA: 3.88 / 4.0</strong></p>
-          </li>
-          <li>
-            <h3>Bachelor's Degree in Business Administration
-              <span class="date">(2024 – Present)</span>
-            </h3>
-            <p>University of the People — <strong>CGPA: 3.17 / 4.0</strong></p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Work Experience -->
-    <section id="experience" class="section section--alt">
+<!-- PROJECTS -->
+<section id="projects" class="section">
   <div class="container">
-    <h2>Work Experience</h2>
+    <h2>Projects</h2>
 
-    <div class="exp-list">
-      <!-- Softnovations -->
-      <!-- Softnovations -->
-<article class="exp-item">
-  <div class="exp-head">
-    <div class="exp-company">Softnovations</div>
-    <div class="exp-meta">2025 – Present</div>
-  </div>
-  <div class="exp-role">Junior Web Developer</div>
-  <p>
-    Build and maintain Laravel + MySQL web applications, integrate REST APIs, and
-    improve performance through profiling and query optimization.
-  </p>
+    <!-- WORKING PROJECTS FIRST -->
+    <h3 style="margin:1.25rem 0 0.5rem; color:#aab0bf;">Professional Projects</h3>
+    <div class="grid projects">
 
-  <!-- NEW: Confidential projects note -->
-  <div class="confidential-note">
-    <i class="fa-solid fa-user-shield" aria-hidden="true"></i>
-    <span><strong>Confidential Projects:</strong> details available upon request (under NDA) — described as needed for professional portfolio.</span>
-  </div>
-
-  <!-- Existing bullets -->
-  <ul class="exp-bullets">
-    <li><strong>Steelplus — Cargo Trading Web Application (2025):</strong> Delivered full-stack features across Laravel services, database schema design, and frontend integration; contributed test coverage and QA.</li>
-    <li><strong>168Home — Excel Generator with Speech-to-Text (2025):</strong> Co-developed voice-input flows to speed up elderly users’ data entry; implemented accessible UI and backend endpoints.</li>
-    <li><strong>Sipman — Wine Selling & Admin Site (2025):</strong> Stabilized legacy codebase, fixed critical bugs, and added admin features to meet internal operations needs.</li>
-  </ul>
-
-  <div class="stack">
-    <span class="pill">Laravel</span><span class="pill">PHP</span><span class="pill">MySQL</span>
-    <span class="pill">REST API</span><span class="pill">JavaScript</span><span class="pill">Git/GitHub</span>
-  </div>
-</article>
-
-
-      <!-- Super Seven Stars -->
-      <article class="exp-item">
-        <div class="exp-head">
-          <div class="exp-company">Super Seven Stars Motors Industry Co., Ltd</div>
-          <div class="exp-meta">2020 – 2021</div>
+      <article class="project-card">
+        <div class="project-card__body">
+          <h3>Steelplus — Cargo Trading Web Application</h3>
+          <p>Production-level Laravel & MySQL system for cargo trading operations.</p>
         </div>
-        <div class="exp-role">Junior CAD Designer</div>
-        <p>Assisted in 2D/3D automotive design using AutoCAD and supported design reviews with drafts and revisions.</p>
-        <div class="stack">
-          <span class="pill">AutoCAD</span><span class="pill">Drafting</span>
+        <div class="project-card__meta">
+          <span class="tag">Laravel</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">Production</span>
         </div>
       </article>
 
-      <!-- New Image -->
-      <article class="exp-item">
-        <div class="exp-head">
-          <div class="exp-company">New Image Computer Store & Wedding Hall, Yangon</div>
-          <div class="exp-meta">2017 – 2020</div>
+      <article class="project-card">
+        <div class="project-card__body">
+          <h3>168Home — Excel Generator with Speech-to-Text</h3>
+          <p>Accessibility-focused system enabling elderly users to generate Excel data via voice.</p>
         </div>
-        <div class="exp-role">Administrative Assistant</div>
-        <p>Prepared customer documents, supported daily office operations, and assisted with wedding event coordination and photo editing.</p>
-        <div class="stack">
-          <span class="pill">Office Suite</span><span class="pill">Coordination</span><span class="pill">Photoshop</span>
+        <div class="project-card__meta">
+          <span class="tag">Laravel</span>
+          <span class="tag">Speech-to-Text</span>
         </div>
       </article>
+
+      <article class="project-card">
+        <div class="project-card__body">
+          <h3>Sipman — Wine Selling & Admin Platform</h3>
+          <p>Bug fixes, feature updates, and admin system stabilization.</p>
+        </div>
+        <div class="project-card__meta">
+          <span class="tag">Laravel</span>
+          <span class="tag">Admin Panel</span>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- ACADEMIC PROJECTS -->
+    <h3 style="margin:2rem 0 0.5rem; color:#aab0bf;">Academic Projects</h3>
+    <div class="grid projects">
+
+      <article class="project-card">
+        <div class="project-card__body">
+          <h3>Personal Portfolio Website</h3>
+          <p>Responsive portfolio built with semantic HTML and modern CSS.</p>
+        </div>
+        <div class="project-card__meta">
+          <span class="tag">HTML / CSS</span>
+          <a class="link" href="https://myatminhtet30.github.io" target="_blank">Live</a>
+          <a class="link" href="https://github.com/MyatMinHtet30/MyatMinHtet30.github.io" target="_blank">Code</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__body">
+          <h3>AI Text Summarizer</h3>
+          <p>AI-powered tool to summarize long text into concise output.</p>
+        </div>
+        <div class="project-card__meta">
+          <span class="tag">Python</span>
+          <a class="link" href="https://github.com/MyatMinHtet30/ai-text-summarizer" target="_blank">Code</a>
+        </div>
+      </article>
+
     </div>
   </div>
 </section>
 
+</main>
 
-    <!-- Certificates -->
-    <section id="certificates" class="section">
-      <div class="container">
-        <h2>Certificates</h2>
-        <ul class="grid certs" role="list">
-          <li class="card cert">
-            <i class="fa-solid fa-certificate" aria-hidden="true"></i>
-            <div>
-              <div class="cert-title">Data Analytics for Business Forecasting</div>
-              <div class="cert-issuer">Stamford International University</div>
-            </div>
-          </li>
-          <li class="card cert">
-            <i class="fa-solid fa-certificate" aria-hidden="true"></i>
-            <div>
-              <div class="cert-title">Data Analytics with Databricks and Power BI (Workshop)</div>
-              <div class="cert-issuer">Stamford International University</div>
-            </div>
-          </li>
-          <li class="card cert">
-            <i class="fa-solid fa-certificate" aria-hidden="true"></i>
-            <div>
-              <div class="cert-title">Dynamic Web Development based on Cloud</div>
-              <div class="cert-issuer">Stamford International University</div>
-            </div>
-          </li>
-          <li class="card cert">
-            <i class="fa-solid fa-certificate" aria-hidden="true"></i>
-            <div>
-              <div class="cert-title">Basic CCTV and Networking</div>
-              <div class="cert-issuer">ABC</div>
-            </div>
-          </li>
-          <li class="card cert">
-            <i class="fa-solid fa-certificate" aria-hidden="true"></i>
-            <div>
-              <div class="cert-title">Professional Diploma in Leadership (OTHM, UK)</div>
-              <div class="cert-issuer">Myanmar Management Institute</div>
-            </div>
-          </li>
-          <li class="card cert">
-            <i class="fa-brands fa-aws" aria-hidden="true"></i>
-            <div>
-              <div class="cert-title">
-                AWS Academy Graduate – Machine Learning Foundations
-              </div>
-              <div class="cert-issuer">
-                Amazon Web Services (AWS) • 20 hours
-              </div>
-              <a class="link" 
-                 href="https://www.credly.com/go/GQZluwQL" 
-                 target="_blank">
-                 View Digital Badge
-              </a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> Myat Min Htet. All rights reserved.</p>
+  </div>
+</footer>
 
-    <!-- Projects -->
-    <section id="projects" class="section">
-      <div class="container">
-        <h2>Projects</h2>
-        <h3 style="margin:1.25rem 0 0.5rem; color:#aab0bf; font-weight:600;">
-          Professional Projects
-        </h3>
-        
-        <div class="grid projects">
-          <article class="project-card">
-            <div class="project-card__body">
-              <h3>Steelplus — Cargo Trading Web Application</h3>
-              <p>
-                Enterprise cargo trading platform built with Laravel and MySQL.
-                Worked on backend services, database design, and frontend integration.
-              </p>
-            </div>
-            <div class="project-card__meta">
-              <span class="tag">Laravel / MySQL</span>
-              <span class="tag">REST API</span>
-              <span class="tag">Production</span>
-            </div>
-          </article>
-        
-          <article class="project-card">
-            <div class="project-card__body">
-              <h3>168Home — Excel Generator with Speech-to-Text</h3>
-              <p>
-                Internal tool designed for elderly users to generate Excel files using
-                voice input. Focused on accessibility and automation.
-              </p>
-            </div>
-            <div class="project-card__meta">
-              <span class="tag">Laravel</span>
-              <span class="tag">Speech-to-Text</span>
-              <span class="tag">Accessibility</span>
-            </div>
-          </article>
-        
-          <article class="project-card">
-            <div class="project-card__body">
-              <h3>Sipman — Wine Selling & Admin Platform</h3>
-              <p>
-                Maintained and extended a wine e-commerce and admin system by fixing
-                critical bugs and adding internal features.
-              </p>
-            </div>
-            <div class="project-card__meta">
-              <span class="tag">Laravel</span>
-              <span class="tag">Admin Panel</span>
-            </div>
-          </article>
-        </div>
+<script>
+function toggleMenu(){
+  document.getElementById('navMenu').classList.toggle('open');
+}
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 
-        <!-- Academic Projects -->
-        <h3 style="margin:1.25rem 0 0.5rem; color:#aab0bf; font-weight:600;">Academic Projects</h3>
-        <div class="grid projects">
-          <article class="project-card">
-            <div class="project-card__body">
-              <h3>Personal Portfolio Website</h3>
-              <p>
-                A responsive, mobile-friendly portfolio built with semantic HTML and modern CSS.
-              </p>
-            </div>
-            <div class="project-card__meta">
-              <span class="tag">HTML / CSS</span>
-              <a class="link" href="https://myatminhtet30.github.io" target="_blank">Live</a>
-              <a class="link" href="https://github.com/MyatMinHtet30/MyatMinHtet30.github.io" target="_blank">Code</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-card__body">
-              <h3>AI Text Summarizer</h3>
-              <p>Summarizes long text into concise points using AI (Python + simple web UI).</p>
-            </div>
-            <div class="project-card__meta">
-              <span class="tag">Python / Web</span>
-              <a class="link" href="https://myatminhtet30.github.io/ai-text-summarizer/" target="_blank">Live</a>
-              <a class="link" href="https://github.com/MyatMinHtet30/ai-text-summarizer" target="_blank">Code</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-card__body">
-              <h3>Arduino Vision Assist</h3>
-              <p>Assistive system that detects nearby objects and alerts with tones.</p>
-            </div>
-            <div class="project-card__meta">
-              <span class="tag">Arduino / IoT</span>
-              <a class="link is-disabled" href="#">Live</a>
-              <a class="link" href="https://github.com/MyatMinHtet30/arduino-vision-assist" target="_blank">Code</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-card__body">
-              <h3>Agoda Hotel Reservation System</h3>
-              <p>Java Swing project simulating hotel booking and payment flow.</p>
-            </div>
-            <div class="project-card__meta">
-              <span class="tag">Java / Swing</span>
-              <a class="link is-disabled" href="#">Live</a>
-              <a class="link" href="https://github.com/MyatMinHtet30/Agoda-University-project-.git" target="_blank">Code</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-card__body">
-              <h3>AI Text-to-Speech Generator</h3>
-              <p>Streamlit app using ElevenLabs API with multiple voices and download support.</p>
-            </div>
-            <div class="project-card__meta">
-              <span class="tag">Python / Streamlit / API</span>
-              <a class="link is-disabled" href="#">Live</a>
-              <a class="link" href="https://github.com/MyatMinHtet30/ai-text-to-speech-generate" target="_blank">Code</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section section--alt">
-      <div class="container">
-        <h2>Contact</h2>
-        <p>If you’d like to chat about opportunities or projects, feel free to reach out.</p>
-        <ul class="contact-list">
-          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:myatmin3011@gmail.com">myatmin3011@gmail.com</a></li>
-          <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/myat-min-htet-22a849291/" target="_blank">LinkedIn</a></li>
-          <li><i class="fa-brands fa-github"></i> <a href="https://github.com/MyatMinHtet30" target="_blank">GitHub</a></li>
-          <li><i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/myatminhtet301?igsh=MWNjOW5uYTY2emdkOA==" target="_blank">Instagram</a></li>
-          <li><i class="fa-brands fa-line"></i> <a href="https://line.me/ti/p/hJv90A3bak" target="_blank">Line</a></li>
-        </ul>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Myat Min Htet. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script>
-    function toggleMenu(){
-      const btn = document.querySelector('.nav-toggle');
-      const menu = document.getElementById('navMenu');
-      const expanded = btn.getAttribute('aria-expanded') === 'true';
-      btn.setAttribute('aria-expanded', String(!expanded));
-      menu.classList.toggle('open');
-    }
-
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
-
-
-
